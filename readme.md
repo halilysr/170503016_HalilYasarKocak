@@ -1,5 +1,5 @@
 Database:
-Django sayesinde database bağlantısı otomatik olarak kurulduğu için ekstra bir class yazmaya gerek kalmadan database erişimi mevcuttur.
+Thanks to Django, since the database connection is established automatically, database access is provided without the need for any extra editing.
 
 Design:
-Register, Login, Logout sayfaları tamamlanmıştır, navbar üzerindeki butonlardan sayfalara yönlendirme yapılabilmektedir.
+Register, Login, Logout pages have been completed, with the buttons on the navbar can be redirected to the pages.
