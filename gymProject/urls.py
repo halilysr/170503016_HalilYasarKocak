@@ -21,7 +21,7 @@ from training import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name= "index"),   
-    path('training/',include("training.urls")),
+    path('trainings/',include("training.urls")),
     path('user/',include("user.urls")),
 ]
 

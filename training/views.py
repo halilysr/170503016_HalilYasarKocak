@@ -8,3 +8,6 @@ def index(request):
 
 def training(request):
     return render(request, "training.html")
+
+def dashboard(request):
+    return render(request,"dashboard.html")

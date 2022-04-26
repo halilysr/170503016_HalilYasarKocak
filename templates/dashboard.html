@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Dashboard</h3>
+<hr>
+
+<p>
+    Wellcome, <small>{{request.user.username}}</small>, Dashboard will be displayed here
+</p>
+<hr>
+  
+{% endblock body %}

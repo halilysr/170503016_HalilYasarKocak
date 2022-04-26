@@ -1,7 +1,12 @@
 from django import forms
 
+class LoginForm(forms.Form):
+    username = forms.CharField(label= "user name")
+    password = forms.CharField(label= "password",widget= forms.PasswordInput)
+
+
 class RegisterForm(forms.Form):
-    username = forms.CharField(max_length= 50 , label="UserNamee")
+    username = forms.CharField(max_length= 50 , label="User name")
     password = forms.CharField(max_length=20, label="Password", widget=forms.PasswordInput)
     confirm = forms.CharField(max_length=20, label="Confirm Password", widget=forms.PasswordInput)
 
