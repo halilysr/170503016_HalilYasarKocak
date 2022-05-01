@@ -49,7 +49,7 @@ def loginUser(request):
         return redirect("index") 
     return render(request, "login.html",context)
 
-def LogoutUser(request):
+def logoutUser(request):
     logout(request)
     messages.success(request,"Successfully logged out")
     return redirect("index")

@@ -2,6 +2,17 @@
 
 {% block body %}
 
-    <h3>Trainings will be appear here</h3>
+    {% for training in trainings  %}
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../media/{{training.image}}" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">{{training.name}}</h5>
+        <p class="card-text">{{training.description}}</p>
+        <a href="#" class="btn btn-danger">Details</a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <a class="btn btn-danger" href = "/training/addtraining">Add Training</a>
 
 {% endblock body %}
